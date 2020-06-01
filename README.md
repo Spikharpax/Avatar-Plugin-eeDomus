@@ -6,9 +6,9 @@ Ce plugin est un add-on pour le framework [Avatar](https://spikharpax.github.io/
 
 ### _Affichez et contrôlez vos périphériques en mode Plan directement dans l'interface A.V.A.T.A.R !_
 
-<p align="center"><img src="assets/images/Plan.jpg" width="80%" height="80%"/></p>
+<p align="center"><img src="assets/images/Plan.jpg" width="90%" height="90%"/></p>
 
-<p align="center"><img src="assets/images/widgets.jpg" width="60%" height="60%"/></p>
+<p align="center"><img src="assets/images/widgets.jpg" width="70%" height="70%"/></p>
 
 Les possibilités de personnalisation sont grandes, vous pouvez intervenir sur différentes propriétés des widgets:
 * La couleur du fond 
@@ -19,6 +19,7 @@ Les possibilités de personnalisation sont grandes, vous pouvez intervenir sur d
 * La taille de la police de la valeur
 * La taille de la police du status
 * Le décalage de la position du texte du status
+* L'image pour les différents états
 * La taille de l'image
 
 Et aussi:
