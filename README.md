@@ -1,23 +1,50 @@
-# eedomus
+# eeDomus 
 
-Ce plugin est un add-on pour le framework [Avatar](https://github.com/Spikharpax/Avatar-Serveur-3.0).
+# _Under construction...
 
-Gstion de la box domotique eedomus
+Ce plugin est un add-on pour le framework [Avatar](https://spikharpax.github.io/A.V.A.T.A.R/).
 
-## Installation
+### _Affichez et contrôlez vos périphériques en mode Plan directement dans l'interface A.V.A.T.A.R !
 
-- téléchargez le projet
-- Dézippez le fichier `Avatar-Plugin-eedomus-master.zip` dans un répertoire temporaire
-- Déplacez-vous dans le répertoire `Avatar-Plugin-eedomus-master`
-- Copiez le répertoire `eedomus` dans le répertoire `Avatar-Serveur/resources/core/plugins`
+<p align="center"><img src="assets/images/Plan.jpg" width="50%" height="50%"/></p>
 
+<p align="center"><img src="assets/images/widgets.jpg" width="100%" height="100%"/></p>
 
-### Utilisation
+Les possibilités de personnalisation sont grandes, vous pouvez intervenir sur différentes propriétés des widgets:
+* La couleur du fond 
+* La couleur des textes
+* La transparence 
+* La dimension de la bordure
+* La taille de la police du titre
+* La taille de la police de la valeur
+* La taille de la police du status
+* Le décalage de la position du texte du status
+* La taille de l'image
 
-Voir la description du plugin dans Plugin Studio
+Et aussi:
+* Tester les modifications sans sauvegarder
+* Sauvegardez les modifications pour LE widget sélectionné ou pour TOUS les widgets
+
+### _Définissez des règles vocales pour tous vos périphériques et toutes leurs valeurs sans aucun développement et en 2 minutes !
+
+<p align="center"><img src="assets/images/rules.jpg" width="70%" height="70%"/></p>
+
+Et encore plein d'autres choses !
+
+Le portage du plug-in pour une autre box domotique est possible. Téléchargez le plug-in et suivez la documentation pour savoir comment faire.
+
+***
+## ★ Installation
+* Téléchargez le projet depuis la bibliothèque de plug-ins A.V.A.T.A.R
+
+***
+## ★ Configuration et utilisation
+* Ouvrez le Plug-in Studio A.V.A.T.A.R
+* Cliquez sur l'icône du plug-in eeDomus
+* Dans son menu déroulant, cliquez sur _Documentation_
 
 <BR><BR>
  
 ## Versions
-Version 1.0 
+Version 2.0 
 - Version Released
