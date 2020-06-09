@@ -66,9 +66,6 @@ exports.init = function(){
 		eeSecret : Config.modules.eeDomus.API.Secret || '',
 		eeIP : Config.modules.eeDomus.API.IP || ''
 	};
-
-  // Démarrage autoUpdate des Widgets
-  startautoUpdateWidgets();
 }
 
 
@@ -256,6 +253,9 @@ exports.addPluginElements = function(CY,cytoscape) {
   .catch(err => {
     console.log('err:', err || 'erreur à la création du node eeDomus');
   })
+
+  // Démarrage autoUpdate des Widgets
+  startautoUpdateWidgets();
 
 }
 
