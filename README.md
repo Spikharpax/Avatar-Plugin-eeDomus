@@ -1,6 +1,6 @@
 # eeDomus
 
-Ce plugin est un add-on pour le framework [Avatar](https://spikharpax.github.io/A.V.A.T.A.R/).
+Ce plugin est un add-on pour le framework [A.V.A.T.A.R](https://spikharpax.github.io/A.V.A.T.A.R/).
 
 Ce plug-in vous permet d'afficher et de contrôler vos périphériques en mode Plan directement dans l'interface A.V.A.T.A.R.
 
