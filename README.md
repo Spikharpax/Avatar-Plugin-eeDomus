@@ -4,31 +4,19 @@ Ce plugin est un add-on pour le framework [Avatar](https://spikharpax.github.io/
 
 Ce plug-in vous permet d'afficher et de contrôler vos périphériques en mode Plan directement dans l'interface A.V.A.T.A.R.
 
+Tous les types de périphérique sont gérés (capteurs et actionneurs) et tous les widgets sont bidirectionnels, ils envoient les ordres de changement de valeurs et reçoivent les informations des périphériques pour les afficher.
+
 <p align="center"><img src="assets/images/Plan.jpg" width="90%" height="90%"/></p>
 
-<p align="center"><img src="assets/images/widgets.jpg" width="70%" height="70%"/></p>
+<p align="center"><img src="assets/images/personnalisation.jpg" width="100%" height="100%"/></p>
 
-Les possibilités de personnalisation des widgets sont grandes, vous pouvez intervenir sur différentes propriétés des widgets:
-* La couleur du fond
-* La couleur des textes
-* La transparence
-* La dimension de la bordure
-* La taille de la police du titre
-* La taille de la police de la valeur
-* La taille de la police du status
-* Le décalage de la position du texte du status
-* L'image pour les différents états
-* La taille de l'image
-* Tester les modifications sans sauvegarder
-* Sauvegardez les modifications pour le widget sélectionné ou pour tous les widgets
+Mais ce n'est pas tout, ce plug-in vous permet aussi de définir des règles vocales pour tous vos périphériques et toutes leurs valeurs et **sans aucun développement !**.
 
-### _Définissez des règles vocales pour tous vos périphériques et toutes leurs valeurs sans aucun développement et en 2 minutes !_
-
-<p align="center"><img src="assets/images/rules.jpg" width="100%" height="100%"/></p>
+<p align="center"><img src="assets/images/2rules.jpg" width="100%" height="100%"/></p>
 
 Et encore plein d'autres choses !
 
-Le portage du plug-in pour une autre box domotique est possible. Téléchargez le plug-in et suivez la documentation pour savoir comment faire.
+Le portage du plug-in pour une autre box domotique est possible. Téléchargez le plug-in et suivez la documentation.
 
 ***
 ## ★ Installation
@@ -40,8 +28,15 @@ Le portage du plug-in pour une autre box domotique est possible. Téléchargez l
 * Cliquez sur l'icône du plug-in eeDomus
 * Dans son menu déroulant, cliquez sur _Documentation_
 
-<BR>
+***
+## Historique
+* Version 2.0 (09-06-2020):
+    * Nouvelle version, mode Plan, widgets et règles
+* Version 1.0 (01-02-2018):
+    * Démonstrateur
 
-## Versions
-Version 2.0
-- Version Released
+***
+## ★ License
+Logiciel libre sous [licence MIT](https://github.com/Spikharpax/A.V.A.T.A.R/blob/master/LICENSE)
+
+Copyright (c) 2020 A.V.A.T.A.R - Stéphane Bascher
