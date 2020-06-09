@@ -22,6 +22,8 @@ Le portage du plug-in pour une autre box domotique est possible. Téléchargez l
 ## ★ Installation
 * Téléchargez le projet depuis la bibliothèque de plug-ins A.V.A.T.A.R
 
+**Compatibilité:** A.V.A.T.A.R Serveur >= 3.4
+
 ***
 ## ★ Configuration et utilisation
 * Ouvrez le Plug-in Studio A.V.A.T.A.R
