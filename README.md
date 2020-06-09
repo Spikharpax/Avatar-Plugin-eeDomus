@@ -1,19 +1,17 @@
-# eeDomus 
-
-### _Under construction..._
+# eeDomus
 
 Ce plugin est un add-on pour le framework [Avatar](https://spikharpax.github.io/A.V.A.T.A.R/).
 
-### _Affichez et contrôlez vos périphériques en mode Plan directement dans l'interface A.V.A.T.A.R !_
+Ce plug-in vous permet d'afficher et de contrôler vos périphériques en mode Plan directement dans l'interface A.V.A.T.A.R.
 
-<p align="center"><img src="assets/images/Plan.jpg" width="100%" height="100%"/></p>
+<p align="center"><img src="assets/images/Plan.jpg" width="90%" height="90%"/></p>
 
 <p align="center"><img src="assets/images/widgets.jpg" width="70%" height="70%"/></p>
 
-Les possibilités de personnalisation sont grandes, vous pouvez intervenir sur différentes propriétés des widgets:
-* La couleur du fond 
+Les possibilités de personnalisation des widgets sont grandes, vous pouvez intervenir sur différentes propriétés des widgets:
+* La couleur du fond
 * La couleur des textes
-* La transparence 
+* La transparence
 * La dimension de la bordure
 * La taille de la police du titre
 * La taille de la police de la valeur
@@ -21,10 +19,8 @@ Les possibilités de personnalisation sont grandes, vous pouvez intervenir sur d
 * Le décalage de la position du texte du status
 * L'image pour les différents états
 * La taille de l'image
-
-Et aussi:
 * Tester les modifications sans sauvegarder
-* Sauvegardez les modifications pour LE widget sélectionné ou pour TOUS les widgets
+* Sauvegardez les modifications pour le widget sélectionné ou pour tous les widgets
 
 ### _Définissez des règles vocales pour tous vos périphériques et toutes leurs valeurs sans aucun développement et en 2 minutes !_
 
@@ -45,7 +41,7 @@ Le portage du plug-in pour une autre box domotique est possible. Téléchargez l
 * Dans son menu déroulant, cliquez sur _Documentation_
 
 <BR>
- 
+
 ## Versions
-Version 2.0 
+Version 2.0
 - Version Released
