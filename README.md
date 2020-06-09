@@ -6,7 +6,7 @@ Ce plug-in vous permet d'afficher et de contrôler vos périphériques en mode P
 
 Tous les types de périphérique sont gérés (capteurs et actionneurs) et tous les widgets sont bidirectionnels, ils envoient les ordres de changement de valeurs et reçoivent les informations des périphériques pour les afficher.
 
-<p align="center"><img src="assets/images/Plan.jpg" width="90%" height="90%"/></p>
+<p align="center"><img src="assets/images/Plan.jpg" width="100%" height="100%"/></p>
 
 Choisissez simplement le périphérique, les valeurs que vous voulez gérer pour le mode intérrupteur et optionnellement celles que vous voulez voir apparaitre dans le menu circulaire et cliquez sur "Créer". C'est tout !
 <p align="center"><img src="assets/images/createWidget.jpg" width="70%" height="70%"/></p>
