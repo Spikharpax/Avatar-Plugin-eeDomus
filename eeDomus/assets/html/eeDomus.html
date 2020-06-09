@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./node_modules/xel/themes/material.css"/>
+    <script src="./node_modules/xel/xel.min.js"></script>
+    <link rel="stylesheet" href="node_modules/jstree/dist/themes/default/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="./eeDomus.css">
+  </head>
+  <body>
+    <div id="jstree-border" class='with-border'>
+      <div id="jstree"></div>
+    </div>
+    <x-tabs class='tabs' skin="compact" centered>
+      <x-tab id='widget' class="buttonTab" selected>
+        <x-icon name="widgets"></x-icon>
+        <x-label>Périphérique</x-label>
+      </x-tab>
+      <x-tab id='settings' class="buttonTab">
+        <x-icon name="settings-applications"></x-icon>
+        <x-label>Paramètres</x-label>
+      </x-tab>
+      <x-tab id='icon' class="buttonTab">
+        <x-icon name="image"></x-icon>
+        <x-label>Images</x-label>
+      </x-tab>
+      <x-tab id='rules' class="buttonTab">
+        <x-icon name="speaker-phone"></x-icon>
+        <x-label>Règles</x-label>
+      </x-tab>
+    </x-tabs>
+
+    <div id="rulesTab" class="infos" hidden>
+        <x-label class="label color-max" id="label-has-rule">Aucun périphérique sélectionné</x-label>
+
+        <div id="div-regles">
+
+          <x-label class="label-min" id="get-set-choice"></x-label>
+          <x-label class="label-min label-oblique" id="step-1-infos">Pré-définie avec les informations connues du périphérique.</x-label>
+
+          <x-label class="label-min" id="step-2-rule-exists"></x-label>
+          <x-radios id="rule-exists-choice">
+            <x-box>
+              <x-radio id="same-rule"></x-radio>
+              <x-label for="same-rule" class="label-min actions" id="label-same-rule">Utiliser les mêmes règles</x-label>
+            </x-box>
+            <x-box>
+              <x-radio id="new-rule"></x-radio>
+              <x-label for="new-rule" class="label-min" id="label-new-rule">Créer des règles différentes </x-label>
+            </x-box>
+          </x-radios>
+
+          <x-label class="label-min" id="label-add-function">Optionnellement, vous pouvez créer une fonction javascript spéciale:</x-label>
+          <x-input id="add-function"></x-input>
+
+          <x-label class="label-min" id="step-2-infos"></x-label>
+          <x-label class="label-min" id="step-2-set-infos"></x-label>
+          <x-select id="x-select-action">
+            <x-menu id="x-menu-action">
+            </x-menu>
+          </x-select>
+
+          <x-radios id="set-or-macro">
+            <x-box>
+              <x-radio id="set-action" toggled></x-radio>
+              <x-label for="set-action" class="label-min actions" id="label-set-action">Défini toujours une valeur</x-label>
+            </x-box>
+            <x-box>
+              <x-radio id="macro-action"></x-radio>
+              <x-label for="macro-action" class="label-min" id="label-macro-action">Peut activer une macro</x-label>
+            </x-box>
+          </x-radios>
+
+
+
+          <x-label class="label-min step-2-infos-actions" id="step-2-infos-actions">Règles associées à la valeur:</x-label>
+          <x-taginput class= "rules-to-add" id="rules-to-add"></x-taginput>
+
+          <div class="div-traduction-rule">
+            <x-input skin="flat" id="translate-rule">
+                <x-label class="translate-rule-label">Entrez une règle en Français à traduire</x-label>
+            </x-input>
+            <x-button id="do-translate">
+              <x-label class="label-translate-buttons">Traduire</x-label>
+            </x-button>
+            <x-textarea class="translated-rule" id="translated-rule" skin="flat">
+                <x-label class="translate-rule-label">Règle personnalisée en Anglais à ajouter</x-label>
+            </x-textarea>
+            <x-button id="add-translate">
+              <x-label class="label-translate-buttons">Associer</x-label>
+            </x-button>
+          </div>
+       </div>
+
+       <x-buttons tracking="-1" class='rules_settings'>
+          <x-box horizontal>
+           <x-button id="save-rules" skin="flat" disabled>
+             <x-box>
+               <x-icon  name="build"></x-icon>
+               <x-label>Sauvegarder</x-label>
+             </x-box>
+           </x-button>
+           <x-button id="delete-rules" skin="flat" disabled>
+             <x-box>
+               <x-icon  name="build"></x-icon>
+               <x-label>Supprimer</x-label>
+             </x-box>
+           </x-button>
+           <x-button id="exit-rules" skin="flat">
+             <x-box>
+               <x-icon name="close"></x-icon>
+               <x-label>Fermer</x-label>
+             </x-box>
+           </x-button>
+         </x-box>
+       </x-buttons>
+
+    </div>
+
+    <div id="iconTab" class="infos">
+        <x-label class="label color-max" id="label-description-icon">Aucun périphérique sélectionné</x-label>
+        <img id="icon1-widget" width="100%" height="100%"></img>
+        <img id="icon2-widget" width="100%" height="100%"></img>
+        <img id="icon3-widget" width="100%" height="100%"></img>
+
+        <x-label class="label-min label-bold" id="label-icon1-widget"></x-label>
+        <x-label class="label-min label-bold" id="label-icon2-widget"></x-label>
+        <x-label class="label-icon3-widget label-min label-bold" id="label-icon3-widget"></x-label>
+
+        <x-label class="label-min label-oblique" id="sublabel-icon1-widget"></x-label>
+        <x-label class="label-min label-oblique" id="sublabel-icon2-widget"></x-label>
+        <x-label class="label-min label-oblique" id="sublabel-icon3-widget"></x-label>
+
+        <x-label class="label-min" id="label-icon"></x-label>
+
+        <x-select id="x-select-widget">
+          <x-menu id="x-menu-widget">
+          </x-menu>
+        </x-select>
+
+        <x-button id="delete-image" skin="flat" disabled>
+          <x-box>
+            <x-icon name="delete"></x-icon>
+            <x-label>Supprimer les images personnalisées</x-label>
+          </x-box>
+        </x-button>
+
+        <x-button id="exit-image" skin="flat">
+          <x-box>
+            <x-icon name="close"></x-icon>
+            <x-label>Fermer</x-label>
+          </x-box>
+        </x-button>
+
+    </div>
+
+
+    <div id="widgetTab" class="infos">
+      <label id="peripheric-label" class="label color-min">Nom:</label>
+      <label id="peripheric-value" class="label color-max"></label>
+      <label id="usage-label" class="label color-min">Nom d'usage:</label>
+      <label id="usage-value" class="label color-max"></label>
+      <label id="id-label" class="label color-min">Code API:</label>
+      <label id="id-value" class="label color-max"></label>
+      <label id="parent-id-label" class="label color-min">Code API parent:</label>
+      <label id="parent-id-value" class="label color-max"></label>
+      <label id="battery-label" class="label color-min">Batterie:</label>
+      <label id="battery-value" class="label color-max"></label>
+      <label id="type-label" class="label color-min">Type:</label>
+      <label id="type-value" class="label color-max"></label>
+
+      <div id="div-value-list" class="div-value-list">
+          <label id="description-clic-list" class="label-min color-min"></label>
+          <x-taginput id="click-value-list"></x-taginput>
+          <label id="description-dblclic-list" class="label-min color-min"></label>
+          <x-taginput id="dblclick-value-list"></x-taginput>
+          <label id="info-list" class="label-min color-min info-list"></label>
+
+          <label id="set-or-macro-periph-label" class="label-min color-min">Choisissez si une des valeurs du périphérique est liée à une macro:</label>
+          <x-radios id="set-or-macro-periph">
+            <x-box>
+              <x-radio id="set-action-periph" toggled></x-radio>
+              <x-label for="set-action-periph" class="label-min actions" id="label-set-action-periph">Défini toujours une valeur</x-label>
+            </x-box>
+            <x-box>
+              <x-radio id="macro-action-periph"></x-radio>
+              <x-label for="macro-action-periph" class="label-min" id="label-macro-action-periph">Peut déclencher une macro</x-label>
+            </x-box>
+          </x-radios>
+      </div>
+
+      <div id="div-float-label" class="div-value-list">
+          <label id="float-label" class="label-min color-min float-label"></label>
+      </div>
+
+      <x-buttons tracking="-1" class='buttons'>
+         <x-box horizontal>
+          <x-button id="create_widget" skin="flat" disabled>
+            <x-box>
+              <x-icon  name="build"></x-icon>
+              <x-label>Créer</x-label>
+            </x-box>
+          </x-button>
+
+          <x-button id="delete_widget" skin="flat" disabled>
+            <x-box>
+              <x-icon name="delete"></x-icon>
+              <x-label>Supprimer</x-label>
+            </x-box>
+          </x-button>
+
+          <x-button id="exit" skin="flat">
+            <x-box>
+              <x-icon name="close"></x-icon>
+              <x-label>Fermer</x-label>
+            </x-box>
+          </x-button>
+        </x-box>
+      </x-buttons>
+    </div>
+
+    <div id="settingsTab" class="infos">
+        <label id="description-delete-all-widgets" class="label color-max">Supprimer tous les widgets:</label>
+        <x-button id="delete_all_widgets" skin="flat">
+            <x-icon name="delete"></x-icon>
+        </x-button>
+
+        <label id="description-widget-color" class="label-min">Couleur:</label>
+        <x-colorselect id="widget-color">
+          <x-popover modal>
+            <x-wheelcolorpicker id="widget-color-picker"></x-wheelcolorpicker>
+          </x-popover>
+        </x-colorselect>
+
+        <label id="description-widget-text-color" class="label-min">Couleur du texte:</label>
+        <x-colorselect id="widget-text-color">
+          <x-popover modal>
+            <x-wheelcolorpicker id="widget-text-color-picker"></x-wheelcolorpicker>
+          </x-popover>
+        </x-colorselect>
+
+        <label id="description-opacity-widget" class="label-min">Transparence:</label>
+        <x-slider id="opacity-widget" min="0" max="1" step="0.1">
+          <x-label class="size-min" value="0">0</x-label>
+          <x-label class="size-min" value="0.5">0.5</x-label>
+          <x-label class="size-min" value="1">1</x-label>
+        </x-slider>
+
+        <label id="description-padding-widget" class="label-min">Dimension de la bordure:</label>
+        <x-slider id="padding-widget" min="0" max="10" step="1">
+          <x-label class="size-min" value="0">0px</x-label>
+          <x-label class="size-min" value="5">5px</x-label>
+          <x-label class="size-min" value="10">10px</x-label>
+        </x-slider>
+
+        <label id="description-font-size-title" class="label-min">Taille de la police du titre:</label>
+        <x-numberinput id="font-size-title" class="size-min" min="1" max="20" value="12" suffix="px">
+          <x-stepper></x-stepper>
+        </x-numberinput>
+
+        <label id="description-font-size-value" class="label-min">Taille de la police de la valeur:</label>
+        <x-numberinput id="font-size-value" class="size-min" min="1" max="20" value="12" suffix="px">
+          <x-stepper></x-stepper>
+        </x-numberinput>
+
+
+        <label id="description-font-size-status" class="label-min">Taille de la police du status:</label>
+        <x-numberinput id="font-size-status" class="size-min" min="1" max="20" value="12" suffix="px">
+          <x-stepper></x-stepper>
+        </x-numberinput>
+
+        <img src="images/widget.jpg" width="100%" height="100%" class="img-widget"></img>
+
+        <label id="description-padding-value" class="label-min">Décalage de la valeur à << ou >>:</label>
+        <x-slider id="padding-value" min="-10" max="10" step="1">
+          <x-label class="size-min" value="-10">-10</x-label>
+          <x-label class="size-min" value="-5">-5</x-label>
+          <x-label class="size-min" value="0">0</x-label>
+          <x-label class="size-min" value="5">+5</x-label>
+          <x-label class="size-min" value="10">+10</x-label>
+        </x-slider>
+
+        <label id="description-size-widget" class="label-min">Taille de l'image en + ou -:</label>
+        <x-slider id="size-widget" min="-10" max="10" step="2">
+          <x-label class="size-min" value="-10">-10</x-label>
+          <x-label class="size-min" value="-5">-5</x-label>
+          <x-label class="size-min" value="0">0</x-label>
+          <x-label class="size-min" value="5">+5</x-label>
+          <x-label class="size-min" value="10">+10</x-label>
+        </x-slider>
+
+        <x-box>
+          <x-checkbox id="checkbox-selected-widget" disabled></x-checkbox>
+        </x-box>
+        <x-label class="label-min" id="label-selected-widget"></x-label>
+
+        <x-buttons tracking="-1" class='buttons_settings'>
+           <x-box horizontal>
+
+           <x-button id="testing_widget" skin="flat">
+             <x-box>
+               <x-icon name="add-to-queue"></x-icon>
+               <x-label>Tester</x-label>
+             </x-box>
+           </x-button>
+
+            <x-button id="save-settings" skin="flat">
+              <x-box>
+                <x-icon  name="build"></x-icon>
+                <x-label>Sauvegarder</x-label>
+              </x-box>
+            </x-button>
+
+            <x-button id="exit-settings" skin="flat">
+              <x-box>
+                <x-icon name="close"></x-icon>
+                <x-label>Fermer</x-label>
+              </x-box>
+            </x-button>
+          </x-box>
+        </x-buttons>
+    </div>
+
+    <x-notification id="notification"></x-notification>
+    <x-notification id="notification_small"></x-notification>
+
+    <script>
+        require('./eeDomus.js');
+    </script>
+  </body>
+</html>

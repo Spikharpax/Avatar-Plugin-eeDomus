@@ -1,0 +1,196 @@
+{
+  "Lampe" : {
+    "type": "string",
+    "action": "set",
+    "default_rule": {
+      "0" : {
+            "fr": "éteins la lumière",
+            "en": "turn off * light"
+      },
+      "10" : {
+            "fr": "lumière à 10%",
+            "en": "light * 10%"
+      },
+      "20" : {
+            "fr": "lumière à 20%",
+            "en": "light * 20%"
+      },
+      "30" : {
+            "fr": "lumière à 30%",
+            "en": "light * 30%"
+      },
+      "40" : {
+            "fr": "lumière à 40%",
+            "en": "light * 40%"
+      },
+      "50" : {
+            "fr": "lumière à 50%",
+            "en": "light * 50%"
+      },
+      "60" : {
+            "fr": "lumière à 60%",
+            "en": "light * 60%"
+      },
+      "70" : {
+            "fr": "lumière à 70%",
+            "en": "light * 70%"
+      },
+      "80" : {
+            "fr": "lumière à 80%",
+            "en": "light * 80%"
+      },
+      "90" : {
+            "fr": "lumière à 90%",
+            "en": "light * 90%"
+      },
+      "100" : {
+            "fr": "allume la lumière",
+            "en": "turn on * light"
+      }
+    }
+  },
+  "Température": {
+    "type": "string",
+    "action": "get",
+    "default_rule": {
+        "fr": "Donne moi la température",
+        "en": "give * temperature"
+    },
+    "answer": "Il fait %% degrés"
+  },
+  "Température [ambiante]": {
+    "type": "string",
+    "action": "get",
+    "default_rule": {
+        "fr": "Donne moi la température",
+        "en": "give * temperature"
+    },
+    "answer": "Il fait %% degrés"
+  },
+  "Couleur lumière": {
+    "type": "color",
+    "action": "set",
+    "default_rule": {
+      "100,100,100,0" : {
+            "fr": "couleur en blanc",
+            "en": "color * white"
+        },
+      "0,100,0,0": {
+            "fr": "couleur en vert",
+            "en": "color * green"
+        },
+      "100,0,0,0": {
+            "fr": "couleur en rouge",
+            "en": "color * red"
+        },
+      "0,0,100,0": {
+            "fr": "couleur en bleue",
+            "en": "color * blue"
+        },
+      "100,0,100,0": {
+            "fr": "couleur en magenta",
+            "en": "color * magenta"
+        },
+      "100,100,0,0": {
+            "fr": "couleur en yellow",
+            "en": "color * yellow"
+        },
+      "100,30,0,0": {
+            "fr": "couleur en orange",
+            "en": "color * orange"
+        },
+      "0,100,100,0": {
+            "fr": "couleur en cyan",
+            "en": "color * cyan"
+        }
+    }
+  },
+  "Ouverture": {
+    "type": "string",
+    "action": "set",
+    "default_rule": {
+      "0" : {
+            "fr": "ferme la porte",
+            "en": "close * door"
+      },
+      "100" : {
+            "fr": "ouvre la porte",
+            "en": "open * door"
+      }
+    }
+  },
+  "Consomètre": {
+    "type": "string",
+    "action": "get",
+    "default_rule": {
+        "fr": "Donne moi la consommation",
+        "en": "give * consumption"
+    },
+    "answer": "La consommation est de %% watt"
+  },
+  "Mouvement": {
+    "type": "string",
+    "action": "get",
+    "default_rule": ""
+  },
+  "Détecteur": {
+    "type": "string",
+    "action": "get",
+    "default_rule": ""
+  },
+  "Luminosité": {
+    "type": "string",
+    "action": "get",
+    "default_rule": {
+        "fr": "Donne moi la luminosité",
+        "en": "give * brightness"
+      },
+    "answer": "La luminosité est de %% lux"
+  },
+  "Appareil électrique": {
+    "type": "string",
+    "action": "set",
+    "default_rule": {
+      "0" : {
+            "fr": "éteins l'appareil",
+            "en": "turn off * device"
+      },
+      "100" : {
+            "fr": "allume l'appareil",
+            "en": "turn on * device"
+      }
+    }
+  },
+  "Tension": {
+    "type": "string",
+    "action": "get",
+    "default_rule": {
+        "fr": "Donne moi la tension",
+        "en": "give * tension"
+    },
+    "answer": "La tension est de %% volt"
+  },
+  "Consommation": {
+    "type": "string",
+    "action": "get",
+    "default_rule": {
+        "fr": "Donne moi la consommation",
+        "en": "give * consumption"
+    },
+    "answer": "La consommation est de %% watt"
+  },
+  "Autre": {
+    "type": "string",
+    "action": "set",
+    "default_rule": {
+      "0" : {
+            "fr": "éteins l'appareil",
+            "en": "turn off * device"
+      },
+      "100" : {
+            "fr": "allume l'appareil",
+            "en": "turn on * device"
+      }
+    }
+  }
+}
