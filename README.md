@@ -8,6 +8,9 @@ Tous les types de périphérique sont gérés (capteurs et actionneurs) et tous 
 
 <p align="center"><img src="assets/images/Plan.jpg" width="90%" height="90%"/></p>
 
+Choisissez simplement le périphérique, les valeurs que vous voulez gérer pour le mode intérrupteur et optionnellement celles que vous voulez voir apparaitre dans le menu circulaire et cliquez sur "Créer". C'est tout !
+<p align="center"><img src="assets/images/createWidget.jpg" width="70%" height="70%"/></p>
+
 <p align="center"><img src="assets/images/personnalisation.jpg" width="100%" height="100%"/></p>
 
 Mais ce n'est pas tout, ce plug-in vous permet aussi de définir des règles vocales pour tous vos périphériques et toutes leurs valeurs et **sans aucun développement !**.
