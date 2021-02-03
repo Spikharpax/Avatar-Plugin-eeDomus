@@ -143,6 +143,16 @@ exports.action = function(data, callback){
 					Avatar.Speech.end(data.client);
 				});
 		},
+    eedomusAction: function() {
+      eeDomus_action(data.action.periph, data.action.value);
+    },
+    eedomusMacro: function() {
+      if (Config.modules.eeDomus.clients[room]) {
+        let macro_id = getMacroIDByNotes(Config.modules.eeDomus.clients[room][data.action.periph], data.action.value)
+        if (macro_id)
+          Avatar.EEDomusLib.macro(macro_id)
+      }
+    },
     // Fonction connecteur HTTP box eeDomus, recoit l'information du périphérique quand il change de valeur
     updateWidget : function() {
 			updateWidget(data.action);

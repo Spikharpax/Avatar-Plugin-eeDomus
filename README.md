@@ -35,6 +35,8 @@ Le portage du plug-in pour une autre box domotique est possible. Téléchargez l
 
 ***
 ## Historique
+* Version 2.1 (03-02-2021):
+    * Ajout de 2 fonctions supplémentaires pour appel par Avatar.call
 * Version 2.0 (09-06-2020):
     * Nouvelle version, mode Plan, widgets et règles
 * Version 1.0 (01-02-2018):

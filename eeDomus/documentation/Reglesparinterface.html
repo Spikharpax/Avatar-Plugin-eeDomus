@@ -198,12 +198,12 @@
 <li style="margin-left: 0px" class="rvps6"><span class="rvts6">Si 2 périphériques ont un nom identique (hors nom de pièce ajouté par eeDomus) mais sont dans des pièces différentes, vous pouvez choisir d'utiliser les mêmes règles pour les déclencher. </span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6">Par exemple, si vous avez 2 périphériques avec un nom "Interrupteur" dans 2 pièces différentes, vous pouvez "lier" ces 2 périphériques pour qu'ils utilisent le même groupe de règles et donc pouvoir ainsi utiliser la règle "Allume la lumière" dans les 2 pièces.</span></li>
-<li style="margin-left: 0px" class="rvps7"><span class="rvts22">Il est donc judicieux de bien nommer vos périphériques dans l'application eeDomus</span></li>
+<li style="margin-left: 0px" class="rvps7"><span class="rvts21">Il est donc judicieux de bien nommer vos périphériques dans l'application eeDomus</span></li>
 </ul>
 <li style="margin-left: 0px" class="rvps6"><span class="rvts6">A partir du moment où vous choisissez d'utiliser les mêmes règles et donc de lier ces règles à plusieurs périphériques, toutes les règles de tous les états possibles de ces périphériques deviennent communes à ces périphériques et une modification d'une de ces règles sera aussi commune.</span></li>
 <li style="margin-left: 0px" class="rvps6"><span class="rvts6">Vous pouvez choisir de créer spécialement un groupe de règles pour un périphérique si vous ne voulez pas qu'il partage ses règles avec d'autres périphériques.</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li style="margin-left: 0px" class="rvps7"><span class="rvts6">Pour un groupe de règles créé spécialement pour un périphérique, vous pouvez aussi, si vous le désirez, lui associer une fonction JavaScript qui sera ajoutée automatiquement par le plug-in dans le tableau d'actions de la fonction export.</span><span class="rvts21">action() </span><span class="rvts6">du fichier </span><span class="rvts21">eeDomus.js. </span><span class="rvts6">Ainsi ce périphérique pourra avoir son propre code JS.</span></li>
+<li style="margin-left: 0px" class="rvps7"><span class="rvts6">Pour un groupe de règles créé spécialement pour un périphérique, vous pouvez aussi, si vous le désirez, lui associer une fonction JavaScript qui sera ajoutée automatiquement par le plug-in dans le tableau d'actions de la fonction export.</span><span class="rvts20">action() </span><span class="rvts6">du fichier </span><span class="rvts20">eeDomus.js. </span><span class="rvts6">Ainsi ce périphérique pourra avoir son propre code JS.</span></li>
 </ul></ul></ul>
 <p class="rvps6"><span class="rvts6"><br/></span></p>
 <p class="rvps6"><span class="rvts6">L'onglet "Règles" est découpé en 6 parties:</span></p>
@@ -220,11 +220,11 @@
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
 <li style="margin-left: 0px" class="rvps6"><span class="rvts6">2 types sont possibles, cette information provient des informations connues du périphérique.</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Reçoit du périphérique une information à afficher (de type </span><span class="rvts27">"</span><span class="rvts26">GET"</span><span class="rvts6">)</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Reçoit du périphérique une information à afficher (de type </span><span class="rvts26">"</span><span class="rvts25">GET"</span><span class="rvts6">)</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps6"><span class="rvts6">La règle sert à demander une information au périphérique, par exemple "Donne-moi la température".</span></li>
 </ul>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Exécute l'action de la règle sur le périphérique (de type </span><span class="rvts27">"</span><span class="rvts26">SET"</span><span class="rvts6">)</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Exécute l'action de la règle sur le périphérique (de type </span><span class="rvts26">"</span><span class="rvts25">SET"</span><span class="rvts6">)</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps6"><span class="rvts6">La règle exécute une action sur le périphérique, par exemple "Allume la lumière"</span></li>
 </ul></ul></ul></ul></ul>
@@ -243,42 +243,42 @@
 <tr valign="top">
 <td width="313" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement36.png"></p>
 </td>
-<td width="495" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="495" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6"> Aucune règle n'a encore été définie pour ce périphérique</span></li>
 </ul></ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts22">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts21">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
 </ul></ul>
 </td>
 </tr>
 <tr valign="top">
 <td width="313" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement37.png"></p>
 </td>
-<td width="495" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="495" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6"> Des règles existent pour ce périphérique</span></li>
 </ul></ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Des règles existent pour </span><span class="rvts22">la valeur affichée</span><span class="rvts6"> de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Des règles existent pour </span><span class="rvts21">la valeur affichée</span><span class="rvts6"> de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
 </ul></ul>
 </td>
 </tr>
 <tr valign="top">
 <td width="313" height="699" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement38.png"></p>
 </td>
-<td width="495" height="699" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="495" height="699" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6"> Des règles existent pour un périphérique d'une autre pièce avec un nom identique.</span></li>
 </ul></ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts22">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts21">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
 </ul></ul>
 <p class="rvps6"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Si vous laissez sur "</span><span class="rvts16">Utiliser les mêmes règles":</span></p>
@@ -293,30 +293,30 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts16">Résultat après sauvegarde:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></li>
+<li class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li class="rvps2"><span class="rvts6">Ce périphérique devient unique et ses règles ne sont plus reconnues comme "communes" avec d'autres périphériques.</span></li>
 </ul>
-<li class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></li>
+<li class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Des règles existent pour </span><span class="rvts22">la valeur</span><span class="rvts6"> de la liste d'états possibles du périphérique. Ce périphérique devient unique et toutes ses valeurs ne sont plus reconnues comme "communes" avec d'autres périphériques.</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Des règles existent pour </span><span class="rvts21">la valeur</span><span class="rvts6"> de la liste d'états possibles du périphérique. Ce périphérique devient unique et toutes ses valeurs ne sont plus reconnues comme "communes" avec d'autres périphériques.</span></li>
 </ul></ul>
 <p class="rvps6"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts16">Si un nom de fonction a été entré:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Une fonction a été ajoutée dans le tableau d'actions </span><span class="rvts21">tblCommand</span><span class="rvts6"> de la fonction export.</span><span class="rvts21">action() </span><span class="rvts6">du fichier </span><span class="rvts21">eeDomus.js</span></li>
+<li class="rvps2"><span class="rvts6">Une fonction a été ajoutée dans le tableau d'actions </span><span class="rvts20">tblCommand</span><span class="rvts6"> de la fonction export.</span><span class="rvts20">action() </span><span class="rvts6">du fichier </span><span class="rvts20">eeDomus.js</span></li>
 </ul>
-<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
 <p class="rvps2"><img width="455" height="84" alt="" style="padding : 1px;" src="lib/NouvelElement40.png"></p>
-<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Entrez ensuite votre code JS dans cette fonction et qui sera appelée avec la règle définie. pour le périphérique (</span><span class="rvts26">GET</span><span class="rvts6">) ou pour la valeur à actionner (</span><span class="rvts26">SET</span><span class="rvts6">)</span></li>
+<li class="rvps2"><span class="rvts6">Entrez ensuite votre code JS dans cette fonction et qui sera appelée avec la règle définie. pour le périphérique (</span><span class="rvts25">GET</span><span class="rvts6">) ou pour la valeur à actionner (</span><span class="rvts25">SET</span><span class="rvts6">)</span></li>
 </ul>
-<p class="rvps2"><span class="rvts26"><br/></span></p>
-<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
 <p class="rvps2"><span class="rvts16">Si le champ fonction est vide:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-<li class="rvps2"><span class="rvts6">Aucune fonction n'est ajoutée dans le </span><span class="rvts21">eeDomus.js </span><span class="rvts6">et la règle utilise la fonction par défaut. </span></li>
+<li class="rvps2"><span class="rvts6">Aucune fonction n'est ajoutée dans le </span><span class="rvts20">eeDomus.js </span><span class="rvts6">et la règle utilise la fonction par défaut. </span></li>
 </ul>
 </td>
 </tr>
@@ -327,7 +327,7 @@
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
 <li value="3" style="margin-left: 0px" class="rvps7"><span class="rvts16">Choisissez si la règle active une macro</span></li>
 </ol></ol>
-<p class="rvps8"><span class="rvts6">Comme pour un widget, cochez "</span><span class="rvts21">Peut activer une macro</span><span class="rvts6">" si le périphérique contient des macros qui sont associées à la liste de valeurs (au moins une).</span></p>
+<p class="rvps8"><span class="rvts6">Comme pour un widget, cochez "</span><span class="rvts20">Peut activer une macro</span><span class="rvts6">" si le périphérique contient des macros qui sont associées à la liste de valeurs (au moins une).</span></p>
 <p class="rvps8"><span class="rvts6">Voir le chapitre "</span><a class="rvts18" href="Executerunemacro.html">Exécuter une macro</a><span class="rvts6">" pour plus de précisions</span></p>
 <p class="rvps7"><span class="rvts16"><br/></span></p>
 <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: decimal;">
@@ -335,8 +335,8 @@
 </ol></ol>
 <p class="rvps6"><span class="rvts16"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Ce champ peut afficher:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li style="margin-left: 0px" class="rvps7"><span class="rvts6">Uniquement la liste des règles (pour le type "</span><span class="rvts26">GET</span><span class="rvts6">")</span></li>
-<li style="margin-left: 0px" class="rvps7"><span class="rvts6">La liste des valeurs possibles et les règles associées (pour le type "</span><span class="rvts26">SET</span><span class="rvts6">")</span></li>
+<li style="margin-left: 0px" class="rvps7"><span class="rvts6">Uniquement la liste des règles (pour le type "</span><span class="rvts25">GET</span><span class="rvts6">")</span></li>
+<li style="margin-left: 0px" class="rvps7"><span class="rvts6">La liste des valeurs possibles et les règles associées (pour le type "</span><span class="rvts25">SET</span><span class="rvts6">")</span></li>
 </ul></ul></ul>
 <p class="rvps7"><span class="rvts6"><br/></span></p>
 <div class="rvps8"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; border-spacing: 2px;">
@@ -347,13 +347,13 @@
 </td>
 </tr>
 <tr valign="top">
-<td width="348" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="348" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement42.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <p class="rvps2"><img width="347" height="139" alt="" style="padding : 1px;" src="lib/NouvelElement41.png"></p>
 </td>
-<td width="484" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="484" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6"> Aucune règle n'a encore été définie pour ce périphérique</span></li>
 </ul></ul>
@@ -362,20 +362,20 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts22">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique.</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts21">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique.</span></li>
 </ul></ul>
 </td>
 </tr>
 <tr valign="top">
-<td width="348" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="348" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement44.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement43.png"></p>
 </td>
-<td width="484" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="484" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6"> Des règles existent pour ce périphérique</span></li>
 </ul></ul>
@@ -384,20 +384,20 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Des règles existent pour </span><span class="rvts22">la valeur affichée</span><span class="rvts6"> de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Des règles existent pour </span><span class="rvts21">la valeur affichée</span><span class="rvts6"> de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
 </ul></ul>
 </td>
 </tr>
 <tr valign="top">
-<td width="348" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="348" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement45.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NouvelElement46.png"></p>
 </td>
-<td width="484" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">GET</span><span class="rvts6">":</span></p>
+<td width="484" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">GET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6"> Des règles existent pour un périphérique d'une autre pièce avec un nom identique.</span></li>
 </ul></ul>
@@ -406,14 +406,14 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts26">SET</span><span class="rvts6">":</span></p>
+<p class="rvps2"><span class="rvts6">Règle de type "</span><span class="rvts25">SET</span><span class="rvts6">":</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts22">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Aucune règle n'a encore été définie pour </span><span class="rvts21">la valeur affichée </span><span class="rvts6">de la liste d'états possibles du périphérique (et non pas globalement au périphérique).</span></li>
 </ul></ul>
 <p class="rvps6"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts16"><br/></span></p>
 <p class="rvps2"><span class="rvts16">Dans les 2 cas:</span></p>
-<p class="rvps2"><span class="rvts28">N'oubliez pas !</span><span class="rvts6"> Vous devez cliquez sur "</span><span class="rvts21">SAUVEGARDER</span><span class="rvts6">" pour associer ces règles. Ce qui est affiché sont les règles existantes du périphérique de l'autre pièce mais pas encore pour celui-ci !</span></p>
+<p class="rvps2"><span class="rvts27">N'oubliez pas !</span><span class="rvts6"> Vous devez cliquez sur "</span><span class="rvts20">SAUVEGARDER</span><span class="rvts6">" pour associer ces règles. Ce qui est affiché sont les règles existantes du périphérique de l'autre pièce mais pas encore pour celui-ci !</span></p>
 </td>
 </tr>
 </table>
@@ -425,25 +425,25 @@
 </ol></ol>
 <p class="rvps7"><span class="rvts16"><br/></span></p>
 <p class="rvps11"><span class="rvts6">Ce champ est une aide à la saisie pour valider et formater en NLP la règle à associer au périphérique.</span></p>
-<p class="rvps11"><span class="rvts6">Si le nom d'usage est connu (et pour un "</span><span class="rvts26">SET</span><span class="rvts6">", avec la valeur affichée), une phrase et sa traduction sont définies par défaut (Plus d'information sur cette possibilité au chapitre "</span><span class="rvts21">Le fichier periphUsage</span><span class="rvts6">")</span></p>
+<p class="rvps11"><span class="rvts6">Si le nom d'usage est connu (et pour un "</span><span class="rvts25">SET</span><span class="rvts6">", avec la valeur affichée), une phrase et sa traduction sont définies par défaut (Plus d'information sur cette possibilité au chapitre "</span><span class="rvts20">Le fichier periphUsage</span><span class="rvts6">")</span></p>
 <p class="rvps7"><span class="rvts6"><br/></span></p>
 <p class="rvps15"><img alt="" style="padding : 1px;" src="lib/NouvelElement48.png"></p>
 <p class="rvps7"><span class="rvts16"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
 <li style="margin-left: 0px" class="rvps11"><span class="rvts6">Entrez une phrase en Français</span></li>
-<li style="margin-left: 0px" class="rvps11"><span class="rvts6"> Appuyez sur le bouton "</span><span class="rvts21">TRADUIRE</span><span class="rvts6">"</span></li>
+<li style="margin-left: 0px" class="rvps11"><span class="rvts6"> Appuyez sur le bouton "</span><span class="rvts20">TRADUIRE</span><span class="rvts6">"</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps16"><span class="rvts6">Si la règle n'est pas utilisée par </span><span class="rvts22">un plug-in A.V.A.T.A.R</span><span class="rvts6">, elle est traduite et formatée pour pouvoir être associée sinon un message d'information apparaît pour vous le notifier.</span></li>
+<li style="margin-left: 0px" class="rvps16"><span class="rvts6">Si la règle n'est pas utilisée par </span><span class="rvts21">un plug-in A.V.A.T.A.R</span><span class="rvts6">, elle est traduite et formatée pour pouvoir être associée sinon un message d'information apparaît pour vous le notifier.</span></li>
 <li style="margin-left: 0px" class="rvps16"><span class="rvts6">Vous pouvez vérifier le résultat du formatage et le modifier à votre convenance.</span></li>
 <li style="margin-left: 0px" class="rvps16"><span class="rvts6">Vous pouvez aussi entrer directement une règle en Anglais dans le champ "Associer" pour éviter la traduction si vous savez que votre règle est correcte.</span></li>
 </ul>
-<li style="margin-left: 0px" class="rvps11"><span class="rvts6">Appuyez sur le bouton "</span><span class="rvts21">ASSOCIER</span><span class="rvts6">"</span></li>
+<li style="margin-left: 0px" class="rvps11"><span class="rvts6">Appuyez sur le bouton "</span><span class="rvts20">ASSOCIER</span><span class="rvts6">"</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps11"><span class="rvts6">Si la règle n'est pas utilisée par </span><span class="rvts22">un périphérique de la même pièce</span><span class="rvts6">, elle est ajoutée dans la liste des règles pour le périphérique sinon un message d'information apparaît pour vous le notifier.</span></li>
+<li style="margin-left: 0px" class="rvps11"><span class="rvts6">Si la règle n'est pas utilisée par </span><span class="rvts21">un périphérique de la même pièce</span><span class="rvts6">, elle est ajoutée dans la liste des règles pour le périphérique sinon un message d'information apparaît pour vous le notifier.</span></li>
 </ul>
-<li style="margin-left: 0px" class="rvps8"><span class="rvts6">Appuyer sur le bouton "</span><span class="rvts21">SAUVEGARDER</span><span class="rvts6">"</span></li>
+<li style="margin-left: 0px" class="rvps8"><span class="rvts6">Appuyer sur le bouton "</span><span class="rvts20">SAUVEGARDER</span><span class="rvts6">"</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
-<li style="margin-left: 0px" class="rvps8"><span class="rvts6">La règle est associée au périphérique (type "</span><span class="rvts26">GET</span><span class="rvts6">") ou à la valeur affichée (type "</span><span class="rvts26">SET</span><span class="rvts6">")</span></li>
+<li style="margin-left: 0px" class="rvps8"><span class="rvts6">La règle est associée au périphérique (type "</span><span class="rvts25">GET</span><span class="rvts6">") ou à la valeur affichée (type "</span><span class="rvts25">SET</span><span class="rvts6">")</span></li>
 <li style="margin-left: 0px" class="rvps8"><span class="rvts6">L'onglet "Règles" est mis à jour avec les nouvelles informations</span></li>
 </ul>
 <li style="margin-left: 0px" class="rvps7"><span class="rvts6">Répétez l'opération pour d'autres règles si vous le désirez</span></li>
@@ -456,7 +456,7 @@
 <p class="rvps6"><span class="rvts16"><br/></span></p>
 <p class="rvps8"><span class="rvts6">Particularités pour la suppression des règles:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li style="margin-left: 0px" class="rvps16"><span class="rvts6">Si vous avez choisi de partager des règles entre plusieurs périphériques, vous ne pourrez choisir de supprimer la règle affichées qu'au dernier périphérique utilisant cette règle (sinon il ne pourrait plus l'utiliser). Avant le dernier qui l'utilise, vous supprimez </span><span class="rvts22">toutes les règles de toutes les valeurs possibles</span><span class="rvts6"> pour le périphérique courant en même temps.</span></li>
+<li style="margin-left: 0px" class="rvps16"><span class="rvts6">Si vous avez choisi de partager des règles entre plusieurs périphériques, vous ne pourrez choisir de supprimer la règle affichées qu'au dernier périphérique utilisant cette règle (sinon il ne pourrait plus l'utiliser). Avant le dernier qui l'utilise, vous supprimez </span><span class="rvts21">toutes les règles de toutes les valeurs possibles</span><span class="rvts6"> pour le périphérique courant en même temps.</span></li>
 </ul></ul></ul>
 <p class="rvps16"><span class="rvts6"><br/></span></p>
 <p class="rvps16"><img width="460" height="161" alt="" style="padding : 1px;" src="lib/NouvelElement50.png"></p>

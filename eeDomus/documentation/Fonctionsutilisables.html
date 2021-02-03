@@ -173,7 +173,7 @@
                         <li><a href="Developpement.html">D&eacute;veloppement</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Developpement.html" title="D&eacute;veloppement" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Developpement.html" title="D&eacute;veloppement" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Portageversuneautreboxdomotique.html" title="Portage vers une autre box domotique" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="Developpement.html" title="D&eacute;veloppement" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Appeldemacros.html" title="Appel de macros" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Portageversuneautreboxdomotique.html" title="Portage vers une autre box domotique" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -185,12 +185,12 @@
             <div class="main-content">
                 
 <p></p>
-<p class="rvps2"><span class="rvts6">Ci-dessous quelques petites fonctions simples du plug-in qui peuvent vous aider et que vous pouvez utiliser dans vos scripts:</span></p>
+<p class="rvps2"><span class="rvts6">Ci-dessous quelques petites fonctions simple du plug-in qui peuvent vous aider et que vous pouvez utiliser dans vos scripts:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Ces fonctions sont toutes des versions miroirs des fonctions du fichier librairie </span><span class="rvts21">&lt;plug-in&gt;/node_modules/lib-Avatar/eeDomus.js</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Ces fonctions sont toutes des versions miroirs des fonctions du fichier librairie </span><span class="rvts20">&lt;plug-in&gt;/node_modules/lib-Avatar/eeDomus.js</span></li>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-<li style="margin-left: 0px" class="rvps7"><span class="rvts6">A savoir que toutes les fonctions de ce fichier librairie sont accessibles par</span><span class="rvts21"> Avatar.EEDomusLib.XXXXX</span></li>
-<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Par exemple</span><span class="rvts21">, Avatar.EEDomusLib.getPeriphCaract ("54521212") </span></li>
+<li style="margin-left: 0px" class="rvps7"><span class="rvts6">A savoir que toutes les fonctions de ce fichier librairie sont accessibles par</span><span class="rvts20"> Avatar.EEDomusLib.XXXXX</span></li>
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Par exemple</span><span class="rvts20">, Avatar.EEDomusLib.getPeriphCaract ("54521212") </span></li>
 </ul></ul></ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -201,16 +201,16 @@
 <p class="rvps2"><span class="rvts31">Définie une valeur sur un périphérique</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Exemple:</span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">eeDomus_action ("54521212", "100") </span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">.then (() =&gt; {</span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">Avatar.speak("c'est fait.", data.client, function () {</span></p>
-<p class="rvps7"><span class="rvts21"></span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">Avatar.Speech.end(data.client);</span></p>
-<p class="rvps7"><span class="rvts21"></span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">});</span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">})</span></p>
-<p class="rvps7"><span class="rvts21">.catch(err =&gt; {</span></p>
-<p class="rvps8"><span class="rvts21">Avatar.Speech.end(data.client);</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp;error('Erreur dans ma fonction", err);</span></p>
-<p class="rvps6"><span class="rvts21"> &nbsp; &nbsp; &nbsp;})</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">eeDomus_action ("54521212", "100") </span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">.then (() =&gt; {</span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Avatar.speak("c'est fait.", data.client, function () {</span></p>
+<p class="rvps7"><span class="rvts20"></span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Avatar.Speech.end(data.client);</span></p>
+<p class="rvps7"><span class="rvts20"></span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">});</span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">})</span></p>
+<p class="rvps7"><span class="rvts20">.catch(err =&gt; {</span></p>
+<p class="rvps8"><span class="rvts20">Avatar.Speech.end(data.client);</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp;error('Erreur dans ma fonction", err);</span></p>
+<p class="rvps6"><span class="rvts20"> &nbsp; &nbsp; &nbsp;})</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -221,16 +221,16 @@
 <p class="rvps2"><span class="rvts31">Exécute une macro d'un périphérique</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Exemple:</span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">eeDomus_macro ("54521212") </span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">.then (() =&gt; {</span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">Avatar.speak("c'est fait.", data.client, function () {</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">Avatar.Speech.end(data.client);</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">});</span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">})</span></p>
-<p class="rvps7"><span class="rvts21">.catch(err =&gt; {</span></p>
-<p class="rvps8"><span class="rvts21">Avatar.Speech.end(data.client);</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp;error('Erreur dans ma fonction", err);</span></p>
-<p class="rvps6"><span class="rvts21"> &nbsp; &nbsp; &nbsp;})</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">eeDomus_macro ("54521212") </span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">.then (() =&gt; {</span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Avatar.speak("c'est fait.", data.client, function () {</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Avatar.Speech.end(data.client);</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">});</span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">})</span></p>
+<p class="rvps7"><span class="rvts20">.catch(err =&gt; {</span></p>
+<p class="rvps8"><span class="rvts20">Avatar.Speech.end(data.client);</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp;error('Erreur dans ma fonction", err);</span></p>
+<p class="rvps6"><span class="rvts20"> &nbsp; &nbsp; &nbsp;})</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -241,16 +241,16 @@
 <p class="rvps2"><span class="rvts31">Retourne la caractéristique "</span><span class="rvts32">last_value</span><span class="rvts31">" si existe sinon "</span><span class="rvts32">last_value_text</span><span class="rvts31">"</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Exemple:</span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">eeDomus_get ("54521212") </span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">.then (result =&gt; {</span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">Avatar.speak("il fait "+result+" degrés", data.client, function () {</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">Avatar.Speech.end(data.client);</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">});</span></p>
-<p class="rvps2"><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts21">})</span></p>
-<p class="rvps7"><span class="rvts21">.catch(err =&gt; {</span></p>
-<p class="rvps7"><span class="rvts21"> &nbsp; &nbsp; &nbsp;error('Erreur dans ma fonction", err);</span></p>
-<p class="rvps8"><span class="rvts21">Avatar.Speech.end(data.client);</span></p>
-<p class="rvps6"><span class="rvts21"> &nbsp; &nbsp; &nbsp;})</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">eeDomus_get ("54521212") </span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">.then (result =&gt; {</span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Avatar.speak("il fait "+result+" degrés", data.client, function () {</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Avatar.Speech.end(data.client);</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">});</span></p>
+<p class="rvps2"><span class="rvts20"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">})</span></p>
+<p class="rvps7"><span class="rvts20">.catch(err =&gt; {</span></p>
+<p class="rvps7"><span class="rvts20"> &nbsp; &nbsp; &nbsp;error('Erreur dans ma fonction", err);</span></p>
+<p class="rvps8"><span class="rvts20">Avatar.Speech.end(data.client);</span></p>
+<p class="rvps6"><span class="rvts20"> &nbsp; &nbsp; &nbsp;})</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
